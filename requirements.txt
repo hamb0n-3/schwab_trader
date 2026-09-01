@@ -1,0 +1,7 @@
+# Upper bounds cap the NEXT major version: a real-money bot should not silently
+# pick up a breaking API change on a fresh `pip install`. Bump the ceiling
+# deliberately after testing against a new major.
+schwab-py>=1.5.1,<2
+python-dotenv>=1.0.0,<2
+pandas_market_calendars>=4.0.0,<6
+pypdf>=4.0.0,<7

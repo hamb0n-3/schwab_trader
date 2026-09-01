@@ -1,0 +1,30 @@
+# Secrets — NEVER commit these
+.env
+schwab_token.json
+*.token.json
+
+# Runtime
+KILL_SWITCH
+daily_state.json
+edgar_seen.json
+*.log
+
+# Database (SQLite) — binary, churns every cycle; never commit
+schwab_trader.db
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Congressional feed runtime artifacts
+congress_seen.json
+house_*FD.zip
+house_*FD.zip.meta
+
+# The template (no secrets) must be tracked despite .env.*
+!.env.example
