@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /tmp/fk5.py)",
+      "Bash(tee /tmp/fk5out.txt)",
+      "Bash(awk 'NR>=25 && NR<=75 {printf \"%d\\\\t%s\\\\n\", NR, $0}' /Users/tristan/dev/CodeVault/Finance/schwab_trader/run.py)",
+      "Bash(pip install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /tmp/dbtest.py)",
+      "Bash(python3 -c \"import re; print\\(open\\('executor.py'\\).read\\(\\)[:5000]\\)\")"
+    ]
+  }
+}
